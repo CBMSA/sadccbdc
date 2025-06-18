@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SADCChain ID - Register Identity</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+    .container { background: white; padding: 20px; max-width: 600px; margin: auto; box-shadow: 0 0 10px #ccc; }
+    input, button { display: block; width: 100%; margin-bottom: 10px; padding: 10px; }
+    header { text-align: center; margin-bottom: 20px; }
+    img.logo { width: 120px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/logo.png" class="logo" alt="SADCChain ID Logo" />
+      <h1>SADCChain ID Registration</h1>
+    </header>
+    <form id="registrationForm" enctype="multipart/form-data" method="POST" action="/register">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="text" name="country" placeholder="Country" required />
+      <label>Upload Passport/ID (PDF only)</label>
+      <input type="file" name="document" accept="application/pdf" required />
+      <label>Scan Fingerprint</label>
+      <input type="file" name="fingerprint" accept="image/*" required />
+      <button type="submit">Register Identity</button>
+    </form>
+    <footer style="text-align:center;margin-top:20px;">
+      <small>© 2025 SADC CBDC Platform. All rights reserved. Licensed under CC BY-SA 4.0.</small>
+    </footer>
+  </div>
+</body>
+</html>
