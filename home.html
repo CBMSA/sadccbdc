@@ -135,7 +135,7 @@
     async function fetchCrossBorderPayments() {
       const recordNo = 1;
       const noOfRecords = 5;
-      const apiKey = "YOUR_API_KEY_HERE";  // Replace with your actual X-Authorization key
+      const apiKey = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaXhwbGF0Zm9ybS5jb20iLCJzdWIiOiJiMWI0MGUyNy1lNDA3LTRkMDUtYmVjNC02YzRlNTkyYzUzOWQiLCJhdWQiOiJodHRwczovL2FwaS5hcGl4cGxhdGZvcm0uY29tIiwiZXhwIjoxNzUwOTcxMTQzLCJuYW1lIjoiQkxFU1NJTkcgRkFSQUkgTVVORVJJIiwiZW1haWwiOiJjYmRjQG1jYnNyZXNiYW5rLmNvbSJ9.XmOgBKdOsmcGN1OnlsjZ0RKfENKFEKj4C_KrNwPl_PmBpbFyIWaGibsZgX-2C-6BVS-mrwY8bV__tazhU8stajLegVIIF8X6Z6SA-SuFNojg44kIePTKDS6T1KKuQdZ5eR6_RF6FUQO2xG-FcNp-t7j6N0VEsPZCz4oO3mDD7NiTVVxHGizS65WVRwNskGbMdC2JzTsf841BR2vD1HSWf1RYqfr6RZ7Y7KdR0Vbbo1AQUSDqyXF6dvOClL0ahnVtmhnxOqWXDoMSTpvBaAKIrbnAs1HHJ7jJjQW1ObBNh5GexicvI_aV6HFJbat6qCkpwyFiHZgX_cOmCjJOWbvDvg";  // Replace with your actual X-Authorization key
 
       try {
         const url = `https://api.apixplatform.com/Cross Border payment/1.0/crossborderpayments?recordNo=${recordNo}&noOfRecords=${noOfRecords}`;
